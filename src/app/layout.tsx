@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import ViewCanvas from "../components/ViewCanvas";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 const alpino = localFont({
   src: "../fonts/Alpino-Variable.woff2",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <Footer/>
       </body>
+      <Analytics/>
     </html>
   );
 }
